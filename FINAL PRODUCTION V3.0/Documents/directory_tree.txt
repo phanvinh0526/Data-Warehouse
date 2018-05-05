@@ -1,0 +1,96 @@
+Folder PATH listing for volume Windows
+Volume serial number is 0000008B D83B:6536
+C:.
+³   tree.txt
+³   
+ÃÄÄÄSERVER SITE
+³   ÃÄÄÄ1. DW_STAGE
+³   ³       DW_STAGE - MAX.sql
+³   ³       
+³   ÃÄÄÄ2. NDS_DW
+³   ³       NDS_DW - MAX.sql
+³   ³       
+³   ÃÄÄÄ3. NDS_METADATA
+³   ³       NDS_METADATA_MAX.sql
+³   ³       
+³   ÃÄÄÄ4. SALE_DDS_DW
+³   ³       Sale DDS - MAX.sql
+³   ³       
+³   ÃÄÄÄ5.STOCK_VALUATION_DDS_DW
+³   ³       DDS_INVENTORY_SCHEMA.csv
+³   ³       DW PROJECT_  METADATA - DDS_STOCK_VALUATION.png
+³   ³       StockValuationHistory_DDS - MAX.sql
+³   ³       
+³   ÃÄÄÄ6. STAGE_To_NDS
+³   ³       StageToNDS_20180104.zip
+³   ³       
+³   ÃÄÄÄ7. NDS_To_DDS
+³   ³       NDSToDDS_20180104.zip
+³   ³       
+³   ÀÄÄÄ8. REPORTS
+³           SP_Stock_Valuation_History.sql
+³           tmp_test1.sql
+³           tmp_test2.sql
+³           View_Dispensed_Script.sql
+³           View_Itemies_Transaction_Detail.sql
+³           
+ÀÄÄÄSTORE SITE
+    ÃÄÄÄ0. SP at BOX_COMPUTER
+    ³       disable_change_tracking.sql
+    ³       enable_change_tracking.sql
+    ³       truncate_tables_LOTS.sql
+    ³       v2_p_ETL_SourceToBox.sql
+    ³       v3_p_ETL_Box_Staging.sql
+    ³       
+    ÃÄÄÄ1. BASH SCRIPTS
+    ³       exec_script.bat
+    ³       exec_script.sql
+    ³       
+    ÃÄÄÄAutumnPlace
+    ³       generate_box_computer_db.sql
+    ³       generate_linkedserver_LS_STAGE.sql
+    ³       generate_linkedserver_LS_STORE.sql
+    ³       generate_users_autumnplace.sql
+    ³       metadata_autumnplace.sql
+    ³       TESTING_exec_script.sql
+    ³       
+    ÃÄÄÄBrimbank
+    ³       AG_METADATA_BRIMBANK_20171120
+    ³       generate_box_computer_db.sql
+    ³       generate_linkedserver_LS_STAGE.sql
+    ³       generate_linkedserver_LS_STORE.sql
+    ³       generate_users_brimbank.sql
+    ³       metadata_brimbank.sql
+    ³       TESTING_exec_script.sql
+    ³       
+    ÃÄÄÄPharmacy@Knox
+    ³       AG_METADATA.sql
+    ³       generate_box_computer_db.sql
+    ³       generate_linkedserver_LS_STAGE.sql
+    ³       generate_linkedserver_LS_STORE.sql
+    ³       generate_users_p@k.sql
+    ³       SOURCE_enable_change_tracking.sql
+    ³       TESTING_exec_script.sql
+    ³       
+    ÃÄÄÄReview - Linden
+    ³       AG_METADATA.sql
+    ³       test.sql
+    ³       
+    ÃÄÄÄReview - Raymond
+    ³   ÀÄÄÄ20171210
+    ³           AG_METADATA.sql
+    ³           
+    ÃÄÄÄReview - TWKnox
+    ³       AG_METADATA.sql
+    ³       readme.txt
+    ³       test.sql
+    ³       
+    ÀÄÄÄRisdonVale
+            ag_metadata_risdonvale.sql
+            AG_METADATA_RISDONVALE_20171120.bak
+            generate_box_computer_db.sql
+            generate_linkedserver_LS_STAGE.sql
+            generate_linkedserver_LS_STORE.sql
+            generate_users_risdonvale.sql
+            TESTING_exec_script.sql
+ 

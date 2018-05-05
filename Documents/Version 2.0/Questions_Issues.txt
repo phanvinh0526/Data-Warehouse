@@ -1,0 +1,14 @@
+Mot so van de cho Metadata
+------------------------------------------------
+
+Architecture
+	1.	Mot Database (E.g: STAGING_DW), dung chung cho tat ca database (LOTS, OFFICE,...???)
+	2.	Trong tung table, ngoai cot StoreID, co can them ngay ETL khong??? (ETL_Date)
+	3.	Trong tung table, co can 1 column ID khong?, hay dung dung combined key???
+	4.	Cac dat ten cac table trong BOX, va trong STAGE??? (prefix OFFICE_) ???
+	5.	Co cach nao, in ra % hoan thanh trong qua trinh xu ly cua SP???
+	
+Bugs
+	1.	Table tai BOX, khong delete nhung rows da transfer to Stage
+	2.	Do lan 2, Data bi xoa het trong BOX va STAGE (URGENT ISSUE)
+	

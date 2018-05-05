@@ -1,0 +1,23 @@
+Selective tables for Fred POS
+-	NUS_PO_PATIENT
+-	NUS_PO_SCRIPT
+-	Register
+-	Transaction
+-	TransactionEntry
+-	Item
+-	Supplier
+-	Category
+-	Department
+-	Tender
+-	TenderEntry
+-	Customer
+
+------------------------------------------
+Selective tables for Fred Dispense
+-	Script
+-	Claim
+-	Manufact
+-	Patient
+
+------------------------------------------
+

@@ -1,0 +1,575 @@
+﻿dbms,TABLE_CATALOG,TABLE_SCHEMA,TABLE_NAME,COLUMN_NAME,ORDINAL_POSITION,DATA_TYPE,CHARACTER_MAXIMUM_LENGTH,CONSTRAINT_TYPE,TABLE_SCHEMA,TABLE_NAME,COLUMN_NAME
+sqlserver,Inventory_DDS_DW,dbo,DimCustomer,CustomerKey,1,bigint,NULL,PRIMARY KEY,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimCustomer,CustomerID,2,bigint,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimCustomer,FirstName,3,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimCustomer,LastName,4,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimCustomer,Title,5,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimCustomer,Address,6,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimCustomer,Suburb,7,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimCustomer,City,8,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimCustomer,PostCode,9,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimCustomer,PhoneNumber,10,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimCustomer,Birthdate,11,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimCustomer,Email,12,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimCustomer,Gender,13,bit,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimCustomer,CreatedDate,14,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimCustomer,UpdatedDate,15,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimDataSource,DataSourceKey,1,bigint,NULL,PRIMARY KEY,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimDataSource,DataSourceID,2,int,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimDataSource,DataSourceName,3,varchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimDataSource,CreatedDate,4,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimDataSource,UpdatedDate,5,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimGroup,GroupKey,1,bigint,NULL,PRIMARY KEY,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimGroup,GroupID,2,bigint,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimGroup,Created,3,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimGroup,Modified,4,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimGroup,Description,5,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimGroup,GroupType,6,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimGroup,Name,7,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimGroup,StoreKey,8,bigint,NULL,FOREIGN KEY,dbo,DimStore,StoreKey
+sqlserver,Inventory_DDS_DW,dbo,DimGroup,DataSourceKey,9,bigint,NULL,FOREIGN KEY,dbo,DimDataSource,DataSourceKey
+sqlserver,Inventory_DDS_DW,dbo,DimGroup,CreatedDate,10,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimGroup,UpdatedDate,11,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPatient,PatientKey,1,bigint,NULL,PRIMARY KEY,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPatient,PatientID,2,bigint,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPatient,PatienttNumber,3,bigint,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPatient,PatientStatus,4,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPatient,PatientType,5,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPatient,Title,6,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPatient,FirstName,7,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPatient,LastName,8,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPatient,Address,9,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPatient,Suburb,10,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPatient,Ward,11,int,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPatient,PostCode,12,int,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPatient,Birthdate,13,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPatient,Email,14,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPatient,Gender,15,int,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPatient,PhoneNumber,16,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPatient,Notes,17,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPatient,FamilyCode,18,bigint,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPatient,SafetyNetScriptAmount,19,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPatient,SafetyNetScriptCount,20,bigint,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPatient,Created,21,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPatient,Modified,22,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPatient,CreatedDate,23,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPatient,UpdatedDate,24,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPharmacist,PharmacistKey,1,bigint,NULL,PRIMARY KEY,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPharmacist,PharmacistID,2,bigint,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPharmacist,FirstName,3,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPharmacist,LastName,4,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPharmacist,PharmacistsInitials,5,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPharmacist,RegistrationNumber,6,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPharmacist,Created,7,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPharmacist,Modified,8,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPharmacist,CreatedDate,9,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPharmacist,UpdatedDate,10,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPricingPlan,PricingPlanKey,1,bigint,NULL,PRIMARY KEY,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPricingPlan,PricingPlanID,2,bigint,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPricingPlan,Created,3,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPricingPlan,Modified,4,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPricingPlan,Description,5,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPricingPlan,FixedRetail,6,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPricingPlan,MarginMarkup,7,int,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPricingPlan,MarginMarkupValue,8,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPricingPlan,Name,9,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPricingPlan,PlanType,10,int,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPricingPlan,PricingLevel,11,int,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPricingPlan,RoundingDenomination,12,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPricingPlan,RoundingLowerBound,13,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPricingPlan,RoundingOption,14,int,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPricingPlan,RoundingUpperBound,15,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPricingPlan,EffectiveDate,16,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPricingPlan,SupplierKey,17,bigint,NULL,FOREIGN KEY,dbo,DimSupplier,SupplierKey
+sqlserver,Inventory_DDS_DW,dbo,DimPricingPlan,StoreKey,18,bigint,NULL,FOREIGN KEY,dbo,DimStore,StoreKey
+sqlserver,Inventory_DDS_DW,dbo,DimPricingPlan,DataSourceKey,19,bigint,NULL,FOREIGN KEY,dbo,DimDataSource,DataSourceKey
+sqlserver,Inventory_DDS_DW,dbo,DimPricingPlan,CreatedDate,20,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPricingPlan,UpdatedDate,21,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPricingReview,PricingReviewKey,1,bigint,NULL,PRIMARY KEY,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPricingReview,PricingReviewID,2,bigint,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPricingReview,Created,3,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPricingReview,Modified,4,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPricingReview,RecordStatus,5,bigint,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPricingReview,Code,6,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPricingReview,CommittedBy,7,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPricingReview,CommittedDate,8,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPricingReview,Description,9,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPricingReview,EffectiveDate,10,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPricingReview,InActive,11,bit,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPricingReview,IsApplied,12,bit,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPricingReview,PricingReviewSourceType,13,int,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPricingReview,StoreKey,14,bigint,NULL,FOREIGN KEY,dbo,DimStore,StoreKey
+sqlserver,Inventory_DDS_DW,dbo,DimPricingReview,DataSourceKey,15,bigint,NULL,FOREIGN KEY,dbo,DimDataSource,DataSourceKey
+sqlserver,Inventory_DDS_DW,dbo,DimPricingReview,CreatedDate,16,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimPricingReview,UpdatedDate,17,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProduct,ProductKey,1,bigint,NULL,PRIMARY KEY,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProduct,ProductID,2,bigint,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProduct,ProductName,3,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProduct,ProductCode,4,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProduct,NoDiscount,5,bit,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProduct,SOH,6,float,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProduct,MTD,7,float,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProduct,SOO,8,float,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProduct,ValueMTD,9,float,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProduct,QuantityCommitted,10,float,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProduct,Tax,11,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProduct,IsTester,12,bit,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProduct,Retail,13,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProduct,Cost,14,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProduct,RealCost,15,float,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProduct,DateCreated,16,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProduct,PLU,17,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProduct,GSTGroupName,18,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProduct,GSTTypeName,19,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProduct,SaleTax,20,float,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProduct,ProductGroupKey,21,bigint,NULL,FOREIGN KEY,dbo,DimProductGroup,ProductGroupKey
+sqlserver,Inventory_DDS_DW,dbo,DimProduct,ProductGlobalHQID,22,bigint,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProduct,CreatedDate,23,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProduct,UpdatedDate,24,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProduct,ProductClassificationKey,25,bigint,NULL,FOREIGN KEY,dbo,DimProductClassification,ProductClassificationKey
+sqlserver,Inventory_DDS_DW,dbo,DimProduct,ProductMessageKey,26,bigint,NULL,FOREIGN KEY,dbo,DimProductMessage,ProductMessageKey
+sqlserver,Inventory_DDS_DW,dbo,DimProduct,ProductDepartmentKey,27,bigint,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductClassification,ProductClassificationKey,1,bigint,NULL,PRIMARY KEY,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductClassification,ProductClassificationID,2,bigint,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductClassification,Created,3,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductClassification,Modified,4,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductClassification,RecordStatus,5,bigint,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductClassification,Code,6,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductClassification,DefaultClassification,7,bit,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductClassification,Name,8,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductClassification,StoreKey,9,bigint,NULL,FOREIGN KEY,dbo,DimStore,StoreKey
+sqlserver,Inventory_DDS_DW,dbo,DimProductClassification,DataSourceKey,10,bigint,NULL,FOREIGN KEY,dbo,DimDataSource,DataSourceKey
+sqlserver,Inventory_DDS_DW,dbo,DimProductClassification,CreatedDate,11,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductClassification,UpdatedDate,12,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductDepartment,ProductDepartmentKey,1,bigint,NULL,PRIMARY KEY,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductDepartment,ProductDepartmentID,2,bigint,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductDepartment,ProductDepartmentName,3,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductDepartment,ProductDepartmentCode,4,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductDepartment,ProductDepartmentGlobalHQID,5,bigint,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductDepartment,CreatedDate,6,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductDepartment,UpdatedDate,7,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductDepartmentGlobal,ProductDepartmentGlobalHQID,1,bigint,NULL,PRIMARY KEY,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductDepartmentGlobal,ProductDepartmentGlobalName,2,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductDepartmentGlobal,CreatedDate,3,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductDepartmentGlobal,UpdatedDate,4,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductGlobal,ProductGlobalHQID,1,bigint,NULL,PRIMARY KEY,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductGlobal,ProductGlobalDescription,2,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductGlobal,ItemnotDiscountable,3,bit,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductGlobal,Sale_TAX,4,float,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductGlobal,GST_TAX,5,char,1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductGlobal,ProductGroupGlobalHQID,6,bigint,NULL,FOREIGN KEY,dbo,DimProductGroupGlobal,ProductGroupGlobalHQID
+sqlserver,Inventory_DDS_DW,dbo,DimProductGlobal,CreatedDate,7,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductGlobal,UpdatedDate,8,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductGroup,ProductGroupKey,1,bigint,NULL,PRIMARY KEY,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductGroup,ProductGroupID,2,bigint,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductGroup,ProductGroupName,3,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductGroup,ProductGroupCode,4,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductGroup,GST,5,float,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductGroup,RegularDiscount,6,float,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductGroup,ExtraDiscount,7,float,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductGroup,Intensive,8,bit,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductGroup,ProductDepartmentKey,9,bigint,NULL,FOREIGN KEY,dbo,DimProductDepartment,ProductDepartmentKey
+sqlserver,Inventory_DDS_DW,dbo,DimProductGroup,ProductGroupGlobalHQID,10,bigint,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductGroup,CreatedDate,11,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductGroup,UpdatedDate,12,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductGroupGlobal,ProductGroupGlobalHQID,1,bigint,NULL,PRIMARY KEY,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductGroupGlobal,ProductGroupGlobalName,2,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductGroupGlobal,ProductDepartmentGlobalHQID,3,bigint,NULL,FOREIGN KEY,dbo,DimProductDepartmentGlobal,ProductDepartmentGlobalHQID
+sqlserver,Inventory_DDS_DW,dbo,DimProductGroupGlobal,CreatedDate,4,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductGroupGlobal,UpdatedDate,5,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductMessage,ProductMessageKey,1,bigint,NULL,PRIMARY KEY,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductMessage,ProductMessageID,2,bigint,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductMessage,Created,3,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductMessage,Modified,4,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductMessage,RecordStatus,5,bigint,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductMessage,AgeLimit,6,int,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductMessage,Code,7,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductMessage,Message,8,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductMessage,StoreKey,9,bigint,NULL,FOREIGN KEY,dbo,DimStore,StoreKey
+sqlserver,Inventory_DDS_DW,dbo,DimProductMessage,DataSourceKey,10,bigint,NULL,FOREIGN KEY,dbo,DimDataSource,DataSourceKey
+sqlserver,Inventory_DDS_DW,dbo,DimProductMessage,CreatedDate,11,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimProductMessage,UpdatedDate,12,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimQuantityDiscountScheme,QuantityDiscountSchemeKey,1,bigint,NULL,PRIMARY KEY,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimQuantityDiscountScheme,QuantityDiscountSchemeID,2,bigint,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimQuantityDiscountScheme,Created,3,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimQuantityDiscountScheme,Modified,4,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimQuantityDiscountScheme,RecordStatus,5,bigint,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimQuantityDiscountScheme,Active,6,bit,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimQuantityDiscountScheme,Code,7,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimQuantityDiscountScheme,Description,8,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimQuantityDiscountScheme,DiscountOddItems,9,bit,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimQuantityDiscountScheme,DiscountSchemeType,10,int,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimQuantityDiscountScheme,ExtendedPriceDiscount,11,bit,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimQuantityDiscountScheme,PercentOffPrice1,12,float,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimQuantityDiscountScheme,PercentOffPrice1A,13,float,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimQuantityDiscountScheme,PercentOffPrice1B,14,float,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimQuantityDiscountScheme,PercentOffPrice1C,15,float,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimQuantityDiscountScheme,PercentOffPrice2,16,float,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimQuantityDiscountScheme,PercentOffPrice2A,17,float,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimQuantityDiscountScheme,PercentOffPrice2B,18,float,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimQuantityDiscountScheme,PercentOffPrice2C,19,float,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimQuantityDiscountScheme,PercentOffPrice3,20,float,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimQuantityDiscountScheme,PercentOffPrice3A,21,float,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimQuantityDiscountScheme,PercentOffPrice3B,22,float,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimQuantityDiscountScheme,PercentOffPrice3C,23,float,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimQuantityDiscountScheme,PercentOffPrice4,24,float,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimQuantityDiscountScheme,PercentOffPrice4A,25,float,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimQuantityDiscountScheme,PercentOffPrice4B,26,float,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimQuantityDiscountScheme,PercentOffPrice4C,27,float,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimQuantityDiscountScheme,Price1,28,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimQuantityDiscountScheme,Price1A,29,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimQuantityDiscountScheme,Price1B,30,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimQuantityDiscountScheme,Price1C,31,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimQuantityDiscountScheme,Price2,32,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimQuantityDiscountScheme,Price2A,33,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimQuantityDiscountScheme,Price2B,34,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimQuantityDiscountScheme,Price2C,35,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimQuantityDiscountScheme,Price3,36,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimQuantityDiscountScheme,Price3A,37,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimQuantityDiscountScheme,Price3B,38,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimQuantityDiscountScheme,Price3C,39,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimQuantityDiscountScheme,Price4,40,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimQuantityDiscountScheme,Price4A,41,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimQuantityDiscountScheme,Price4B,42,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimQuantityDiscountScheme,Price4C,43,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimQuantityDiscountScheme,Quantity1,44,float,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimQuantityDiscountScheme,Quantity2,45,float,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimQuantityDiscountScheme,Quantity3,46,float,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimQuantityDiscountScheme,Quantity4,47,float,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimQuantityDiscountScheme,StoreKey,48,bigint,NULL,FOREIGN KEY,dbo,DimStore,StoreKey
+sqlserver,Inventory_DDS_DW,dbo,DimQuantityDiscountScheme,DataSourceKey,49,bigint,NULL,FOREIGN KEY,dbo,DimDataSource,DataSourceKey
+sqlserver,Inventory_DDS_DW,dbo,DimQuantityDiscountScheme,CreatedDate,50,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimQuantityDiscountScheme,UpdatedDate,51,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimRegister,RegisterKey,1,bigint,NULL,PRIMARY KEY,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimRegister,RegisterID,2,bigint,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimRegister,RegisterNumber,3,int,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimRegister,Description,4,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimRegister,IsDefault,5,int,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimRegister,RecordStatus,6,bigint,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimRegister,Created,7,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimRegister,Modified,8,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimRegister,CreatedDate,9,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimRegister,UpdatedDate,10,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimScriptLink,ScriptLinkKey,1,bigint,NULL,PRIMARY KEY,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimScriptLink,ScriptLinkID,2,bigint,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimScriptLink,ScriptNumber,3,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimScriptLink,ScriptType,4,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimScriptLink,CreatedAt,5,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimScriptLink,Description,6,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimScriptLink,Quantity,7,float,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimScriptLink,PDE,8,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimScriptLink,FirstName,9,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimScriptLink,LastName,10,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimScriptLink,NHSPrice,11,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimScriptLink,GSTAmount,12,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimScriptLink,PatientPrice,13,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimScriptLink,PatientAddress,14,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimScriptLink,PatientNumber,15,int,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimScriptLink,AccountNumber,16,int,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimScriptLink,DirectDebit,17,int,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimScriptLink,CreatedDate,18,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimScriptLink,UpdatedDate,19,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimStaff,StaffKey,1,bigint,NULL,PRIMARY KEY,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimStaff,StaffID,2,bigint,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimStaff,StaffName,3,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimStaff,StaffNumber,4,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimStaff,StaffManager,5,int,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimStaff,InactiveStaff,6,int,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimStaff,SecurityLevel,7,int,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimStaff,CreatedDate,8,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimStaff,UpdatedDate,9,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimStore,StoreKey,1,bigint,NULL,PRIMARY KEY,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimStore,StoreID,2,int,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimStore,StoreName,3,varchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimStore,CreatedDate,4,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimStore,UpdatedDate,5,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimSupplier,SupplierKey,1,bigint,NULL,PRIMARY KEY,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimSupplier,SupplierID,2,bigint,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimSupplier,SupplierName,3,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimSupplier,Address,4,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimSupplier,City,5,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimSupplier,PhoneNumber,6,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimSupplier,FaxNumber,7,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimSupplier,TaxNumber,8,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimSupplier,AccountNumber,9,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimSupplier,Email,10,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimSupplier,Brand,11,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimSupplier,SupplierGlobalHQID,12,bigint,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimSupplier,CreatedDate,13,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimSupplier,UpdatedDate,14,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimSupplierGlobal,SupplierGlobalHQID,1,bigint,NULL,PRIMARY KEY,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimSupplierGlobal,SupplierGlobalName,2,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimSupplierGlobal,ContactName,3,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimSupplierGlobal,Address,4,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimSupplierGlobal,State,5,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimSupplierGlobal,City,6,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimSupplierGlobal,PhoneNumber,7,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimSupplierGlobal,FaxNumber,8,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimSupplierGlobal,TaxNumber,9,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimSupplierGlobal,PostCode,10,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimSupplierGlobal,Email,11,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimSupplierGlobal,CreatedDate,12,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimSupplierGlobal,UpdatedDate,13,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimTender,TenderKey,1,bigint,NULL,PRIMARY KEY,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimTender,TenderID,2,bigint,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimTender,Created,3,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimTender,Modified,4,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimTender,Activity,5,bigint,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimTender,Amount,6,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimTender,DropPayout,7,bigint,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimTender,TenderAction,8,int,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimTender,TenderType,9,bigint,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimTender,StoreKey,10,bigint,NULL,FOREIGN KEY,dbo,DimStore,StoreKey
+sqlserver,Inventory_DDS_DW,dbo,DimTender,DataSourceKey,11,bigint,NULL,FOREIGN KEY,dbo,DimDataSource,DataSourceKey
+sqlserver,Inventory_DDS_DW,dbo,DimTender,CreatedDate,12,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimTender,UpdatedDate,13,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimTime,TimeKey,1,bigint,NULL,PRIMARY KEY,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimTime,TimeCode,2,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimTime,FullDate,3,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimTime,Date,4,date,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimTime,CaledarYear,5,int,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimTime,Quarter,6,int,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimTime,QuarterName,7,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimTime,Month,8,int,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimTime,MonthFullName,9,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimTime,MonthShortName,10,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimTime,Week,11,int,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimTime,WeekName,12,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimTime,DayOfMonth,13,int,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimTime,DayOfWeek,14,int,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimTime,DayOfWeekName,15,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimTime,DayOfWeekShortName,16,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimTime,IsWeekend,17,bit,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,DimTime,Hour,18,int,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBatch,BatchKey,1,bigint,NULL,PRIMARY KEY,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBatch,BatchID,2,bigint,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBatch,Created,3,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBatch,Modified,4,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBatch,RecordStatus,5,bigint,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBatch,AbortedTransactionCount,6,int,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBatch,BatchNumber,7,int,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBatch,BatchStatus,8,int,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBatch,CashBackSurcharge,9,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBatch,ClosingTime,10,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBatch,ClosingTotal,11,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBatch,Comments,12,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBatch,CostOfGoods,13,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBatch,CustomerCount,14,int,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBatch,CustomerDepositMade,15,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBatch,CustomerDepositRedeemed,16,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBatch,DebitSurcharge,17,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBatch,Discounts,18,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBatch,Dropped,19,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBatch,GovernmentRecovery,20,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBatch,LayawayClosed,21,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBatch,LayawayPaid,22,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBatch,Locked,23,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBatch,NoSalesCount,24,int,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBatch,OpeningTime,25,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBatch,OpeningTotal,26,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBatch,OverUnder,27,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBatch,PaidOnAccount,28,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBatch,PaidOut,29,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBatch,PaidToAccount,30,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBatch,Returns,31,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBatch,Sales,32,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBatch,SalesPlusTax,33,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBatch,Tax,34,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBatch,TenderRoundingError,35,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBatch,TotalChange,36,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBatch,TotalTendered,37,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBatch,CurrentFlag,38,bit,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBatch,EffectiveDate,39,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBatch,StoreKey,40,bigint,NULL,FOREIGN KEY,dbo,DimStore,StoreKey
+sqlserver,Inventory_DDS_DW,dbo,FactBatch,DataSourceKey,41,bigint,NULL,FOREIGN KEY,dbo,DimDataSource,DataSourceKey
+sqlserver,Inventory_DDS_DW,dbo,FactBatch,RegisterKey,42,bigint,NULL,FOREIGN KEY,dbo,DimRegister,RegisterKey
+sqlserver,Inventory_DDS_DW,dbo,FactBatch,CreatedDate,43,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBatch,UpdatedDate,44,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBatch,TimeKey,45,bigint,NULL,FOREIGN KEY,dbo,DimTime,TimeKey
+sqlserver,Inventory_DDS_DW,dbo,FactBusinessUnit-AuditHistory,BusinessUnit-AuditHistoryKey,1,bigint,NULL,FOREIGN KEY,dbo,FactBusinessUnit-AuditHistory,BusinessUnit-AuditHistoryKey
+sqlserver,Inventory_DDS_DW,dbo,FactBusinessUnit-AuditHistory,BusinessUnit-AuditHistoryKey,1,bigint,NULL,FOREIGN KEY,dbo,FactBusinessUnit-AuditHistory,BusinessUnit-AuditHistoryKey
+sqlserver,Inventory_DDS_DW,dbo,FactBusinessUnit-AuditHistory,BusinessUnit-AuditHistoryKey,1,bigint,NULL,PRIMARY KEY,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBusinessUnit-AuditHistory,BusinessUnit-AuditHistoryID,2,bigint,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBusinessUnit-AuditHistory,Owner,3,bigint,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBusinessUnit-AuditHistory,AuditActionType,4,int,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBusinessUnit-AuditHistory,AuditDate,5,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBusinessUnit-AuditHistory,AuditType,6,int,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBusinessUnit-AuditHistory,Field,7,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBusinessUnit-AuditHistory,FriendlyName,8,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBusinessUnit-AuditHistory,FromValue,9,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBusinessUnit-AuditHistory,ToValue,10,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBusinessUnit-AuditHistory,Message,11,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBusinessUnit-AuditHistory,ObjectType,12,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBusinessUnit-AuditHistory,SourceName,13,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBusinessUnit-AuditHistory,CurrentFlag,14,bit,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBusinessUnit-AuditHistory,EffectiveDate,15,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBusinessUnit-AuditHistory,StoreKey,16,bigint,NULL,FOREIGN KEY,dbo,DimStore,StoreKey
+sqlserver,Inventory_DDS_DW,dbo,FactBusinessUnit-AuditHistory,DataSourceKey,17,bigint,NULL,FOREIGN KEY,dbo,DimDataSource,DataSourceKey
+sqlserver,Inventory_DDS_DW,dbo,FactBusinessUnit-AuditHistory,ProductKey,18,bigint,NULL,FOREIGN KEY,dbo,DimProduct,ProductKey
+sqlserver,Inventory_DDS_DW,dbo,FactBusinessUnit-AuditHistory,CreatedDate,19,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBusinessUnit-AuditHistory,UpdatedDate,20,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactBusinessUnit-AuditHistory,TimeKey,21,bigint,NULL,FOREIGN KEY,dbo,DimTime,TimeKey
+sqlserver,Inventory_DDS_DW,dbo,FactBusinessUnit-AuditHistory,ProductGlobalHQID,22,bigint,NULL,FOREIGN KEY,dbo,DimProductGlobal,ProductGlobalHQID
+sqlserver,Inventory_DDS_DW,dbo,FactGroup-GroupEntries,Group-GroupEntriesKey,1,bigint,NULL,PRIMARY KEY,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactGroup-GroupEntries,CurrentFlag,2,bit,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactGroup-GroupEntries,EffectiveDate,3,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactGroup-GroupEntries,StoreKey,4,bigint,NULL,FOREIGN KEY,dbo,DimStore,StoreKey
+sqlserver,Inventory_DDS_DW,dbo,FactGroup-GroupEntries,DataSourceKey,5,bigint,NULL,FOREIGN KEY,dbo,DimDataSource,DataSourceKey
+sqlserver,Inventory_DDS_DW,dbo,FactGroup-GroupEntries,ProductKey,6,bigint,NULL,FOREIGN KEY,dbo,DimProduct,ProductKey
+sqlserver,Inventory_DDS_DW,dbo,FactGroup-GroupEntries,GroupKey,7,bigint,NULL,FOREIGN KEY,dbo,DimGroup,GroupKey
+sqlserver,Inventory_DDS_DW,dbo,FactGroup-GroupEntries,CreatedDate,8,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactGroup-GroupEntries,UpdatedDate,9,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactPricingPlan,PricingPlanKey,1,bigint,NULL,PRIMARY KEY,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactPricingPlan,PricingPlanID,2,bigint,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactPricingPlan,Created,3,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactPricingPlan,Modified,4,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactPricingPlan,Description,5,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactPricingPlan,FixedRetail,6,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactPricingPlan,MarginMarkup,7,int,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactPricingPlan,MarginMarkupValue,8,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactPricingPlan,Name,9,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactPricingPlan,PlanType,10,int,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactPricingPlan,PricingLevel,11,int,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactPricingPlan,RoundingDenomination,12,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactPricingPlan,RoundingLowerBound,13,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactPricingPlan,RoundingOption,14,int,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactPricingPlan,RoundingUpperBound,15,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactPricingPlan,CurrentFlag,16,bit,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactPricingPlan,EffectiveDate,17,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactPricingPlan,SupplierKey,18,bigint,NULL,FOREIGN KEY,dbo,DimSupplier,SupplierKey
+sqlserver,Inventory_DDS_DW,dbo,FactPricingPlan,StoreKey,19,bigint,NULL,FOREIGN KEY,dbo,DimStore,StoreKey
+sqlserver,Inventory_DDS_DW,dbo,FactPricingPlan,DataSourceKey,20,bigint,NULL,FOREIGN KEY,dbo,DimDataSource,DataSourceKey
+sqlserver,Inventory_DDS_DW,dbo,FactPricingPlan,CreatedDate,21,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactPricingPlan,UpdatedDate,22,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactPricingPlan,TimeKey,23,bigint,NULL,FOREIGN KEY,dbo,DimTime,TimeKey
+sqlserver,Inventory_DDS_DW,dbo,FactPricingReview,PricingReviewEntryKey,1,bigint,NULL,PRIMARY KEY,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactPricingReview,PricingReviewEntryID,2,bigint,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactPricingReview,Created,3,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactPricingReview,Modified,4,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactPricingReview,RecordStatus,5,bigint,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactPricingReview,AcceptStatus,6,int,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactPricingReview,AutoCalcPriceLevel,7,bit,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactPricingReview,InActive,8,bit,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactPricingReview,NewCost,9,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactPricingReview,NewMSRP,10,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactPricingReview,NewPriceA,11,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactPricingReview,NewPriceB,12,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactPricingReview,NewPriceC,13,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactPricingReview,NewRetail,14,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactPricingReview,NewSupplierCost,15,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactPricingReview,OldCost,16,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactPricingReview,OldMSRP,17,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactPricingReview,OldPriceA,18,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactPricingReview,OldPriceB,19,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactPricingReview,OldPriceC,20,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactPricingReview,OldRetail,21,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactPricingReview,OldSupplierCost,22,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactPricingReview,Source,23,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactPricingReview,CurrentFlag,24,bit,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactPricingReview,EffectiveDate,25,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactPricingReview,StoreKey,26,bigint,NULL,FOREIGN KEY,dbo,DimStore,StoreKey
+sqlserver,Inventory_DDS_DW,dbo,FactPricingReview,DataSourceKey,27,bigint,NULL,FOREIGN KEY,dbo,DimDataSource,DataSourceKey
+sqlserver,Inventory_DDS_DW,dbo,FactPricingReview,ProductKey,28,bigint,NULL,FOREIGN KEY,dbo,DimProduct,ProductKey
+sqlserver,Inventory_DDS_DW,dbo,FactPricingReview,PricingReviewKey,29,bigint,NULL,FOREIGN KEY,dbo,DimPricingReview,PricingReviewKey
+sqlserver,Inventory_DDS_DW,dbo,FactPricingReview,CreatedDate,30,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactPricingReview,UpdatedDate,31,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactPricingReview,TimeKey,32,bigint,NULL,FOREIGN KEY,dbo,DimTime,TimeKey
+sqlserver,Inventory_DDS_DW,dbo,FactStockMovement,StockMovementKey,1,bigint,NULL,PRIMARY KEY,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactStockMovement,StokeMoveTimeKey,2,bigint,NULL,FOREIGN KEY,dbo,DimTime,TimeKey
+sqlserver,Inventory_DDS_DW,dbo,FactStockMovement,ProductKey,3,bigint,NULL,FOREIGN KEY,dbo,DimProduct,ProductKey
+sqlserver,Inventory_DDS_DW,dbo,FactStockMovement,DataSourceKey,4,bigint,NULL,FOREIGN KEY,dbo,DimDataSource,DataSourceKey
+sqlserver,Inventory_DDS_DW,dbo,FactStockMovement,StoreKey,5,bigint,NULL,FOREIGN KEY,dbo,DimStore,StoreKey
+sqlserver,Inventory_DDS_DW,dbo,FactStockMovement,SOH,6,float,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactStockMovement,UpdatedAt,7,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactStockMovement,CreatedAt,8,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactSupplierProduct,SupplierProductKey,1,bigint,NULL,PRIMARY KEY,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactSupplierProduct,SupplierProductID,2,bigint,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactSupplierProduct,Created,3,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactSupplierProduct,Modified,4,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactSupplierProduct,RecordStatus,5,bigint,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactSupplierProduct,Cost,6,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactSupplierProduct,CostPrice1,7,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactSupplierProduct,CostPrice2,8,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactSupplierProduct,CostPrice3,9,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactSupplierProduct,CostPrice4,10,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactSupplierProduct,CostPrice5,11,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactSupplierProduct,CostPriceQuantity1,12,float,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactSupplierProduct,CostPriceQuantity2,13,float,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactSupplierProduct,CostPriceQuantity3,14,float,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactSupplierProduct,CostPriceQuantity4,15,float,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactSupplierProduct,CostPriceQuantity5,16,float,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactSupplierProduct,DealCatalogueName,17,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactSupplierProduct,DealCost,18,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactSupplierProduct,DealEndDate,19,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactSupplierProduct,DealMinDOQ,20,float,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactSupplierProduct,DealStartDate,21,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactSupplierProduct,ItemTax,22,bigint,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactSupplierProduct,LastCost,23,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactSupplierProduct,LastExchangeRate,24,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactSupplierProduct,LastForeignCost,25,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactSupplierProduct,LastReceivedDate,26,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactSupplierProduct,MinimumOrder,27,int,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactSupplierProduct,NeverAutoMatch,28,bit,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactSupplierProduct,PackQuantity,29,int,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactSupplierProduct,PurchaseTax,30,bigint,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactSupplierProduct,Quantity,31,float,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactSupplierProduct,RRP,32,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactSupplierProduct,ReceiveItemQuantity,33,float,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactSupplierProduct,ReorderNumber,34,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactSupplierProduct,SupplierDescription,35,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactSupplierProduct,TaxInc,36,bit,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactSupplierProduct,TaxRate,37,float,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactSupplierProduct,CurrentFlag,38,bit,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactSupplierProduct,EffectiveDate,39,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactSupplierProduct,StoreKey,40,bigint,NULL,FOREIGN KEY,dbo,DimStore,StoreKey
+sqlserver,Inventory_DDS_DW,dbo,FactSupplierProduct,DataSourceKey,41,bigint,NULL,FOREIGN KEY,dbo,DimDataSource,DataSourceKey
+sqlserver,Inventory_DDS_DW,dbo,FactSupplierProduct,ProductKey,42,bigint,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactSupplierProduct,SupplierKey,43,bigint,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactSupplierProduct,CreatedDate,44,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactSupplierProduct,UpdatedDate,45,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactSupplierProduct,TimeKey,46,bigint,NULL,FOREIGN KEY,dbo,DimTime,TimeKey
+sqlserver,Inventory_DDS_DW,dbo,FactTransaction,TransactionKey,1,bigint,NULL,PRIMARY KEY,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactTransaction,TimeKey,2,bigint,NULL,FOREIGN KEY,dbo,DimTime,TimeKey
+sqlserver,Inventory_DDS_DW,dbo,FactTransaction,StaffKey,3,bigint,NULL,FOREIGN KEY,dbo,DimStaff,StaffKey
+sqlserver,Inventory_DDS_DW,dbo,FactTransaction,StoreKey,4,bigint,NULL,FOREIGN KEY,dbo,DimStore,StoreKey
+sqlserver,Inventory_DDS_DW,dbo,FactTransaction,CustomerKey,5,bigint,NULL,FOREIGN KEY,dbo,DimCustomer,CustomerKey
+sqlserver,Inventory_DDS_DW,dbo,FactTransaction,DataSourceKey,6,bigint,NULL,FOREIGN KEY,dbo,DimDataSource,DataSourceKey
+sqlserver,Inventory_DDS_DW,dbo,FactTransaction,TransactionID,7,bigint,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactTransaction,Total,8,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactTransaction,SaleTax,9,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactTransaction,TotalQuantity,10,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactTransaction,TotalCost,11,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactTransaction,TotalExtendedPrice,12,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactTransaction,TotalGovRecov,13,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactTransaction,TotalDiscount,14,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactTransaction,TotalProfit,15,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactTransaction,TotalPoints,16,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactTransaction,TransactionNumber,17,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactTransaction,Comment,18,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactTransaction,Status,19,int,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactTransaction,Type,20,int,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactTransaction,CreatedDate,21,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactTransaction,UpdatedDate,22,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactTransactionEntry,TransactionEntryKey,1,bigint,NULL,PRIMARY KEY,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactTransactionEntry,TransactionKey,2,bigint,NULL,FOREIGN KEY,dbo,FactTransaction,TransactionKey
+sqlserver,Inventory_DDS_DW,dbo,FactTransactionEntry,ScriptLinkKey,3,bigint,NULL,FOREIGN KEY,dbo,DimScriptLink,ScriptLinkKey
+sqlserver,Inventory_DDS_DW,dbo,FactTransactionEntry,ProductKey,4,bigint,NULL,FOREIGN KEY,dbo,DimProduct,ProductKey
+sqlserver,Inventory_DDS_DW,dbo,FactTransactionEntry,ProductKey,4,bigint,NULL,FOREIGN KEY,dbo,DimProduct,ProductKey
+sqlserver,Inventory_DDS_DW,dbo,FactTransactionEntry,ProductGroupGlobalHQID,5,bigint,NULL,FOREIGN KEY,dbo,DimProductGlobal,ProductGlobalHQID
+sqlserver,Inventory_DDS_DW,dbo,FactTransactionEntry,CustomerKey,6,bigint,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactTransactionEntry,StaffKey,7,bigint,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactTransactionEntry,StoreKey,8,bigint,NULL,FOREIGN KEY,dbo,DimStore,StoreKey
+sqlserver,Inventory_DDS_DW,dbo,FactTransactionEntry,DataSourceKey,9,bigint,NULL,FOREIGN KEY,dbo,DimDataSource,DataSourceKey
+sqlserver,Inventory_DDS_DW,dbo,FactTransactionEntry,TimeKey,10,bigint,NULL,FOREIGN KEY,dbo,DimTime,TimeKey
+sqlserver,Inventory_DDS_DW,dbo,FactTransactionEntry,Description,11,nvarchar,-1,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactTransactionEntry,Cost,12,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactTransactionEntry,Retail,13,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactTransactionEntry,OriginalRetail,14,int,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactTransactionEntry,Price,15,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactTransactionEntry,Quantity,16,float,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactTransactionEntry,Tax,17,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactTransactionEntry,Discount,18,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactTransactionEntry,GSTPayable,19,int,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactTransactionEntry,GSTPaid,20,decimal,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactTransactionEntry,CreatedDate,21,datetime,NULL,NULL,NULL,NULL,NULL
+sqlserver,Inventory_DDS_DW,dbo,FactTransactionEntry,UpdatedDate,22,datetime,NULL,NULL,NULL,NULL,NULL

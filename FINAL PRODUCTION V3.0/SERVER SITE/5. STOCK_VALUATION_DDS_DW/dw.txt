@@ -1,0 +1,135 @@
+DataFlowName	ExtractMethod	ColumnName
+doScript_SOURCE_BOX	1	Modified
+doScript_BOX_STAGE	0	
+doClaim_SOURCE_BOX	1	Modified
+doClaim_BOX_STAGE	0	
+doPurchaseOrder_SOURCE_BOX	1	Modified
+doPurchaseOrder_BOX_STAGE	0	
+doActivityEntry_SOURCE_BOX	1	Modified
+doActivityEntry_BOX_STAGE	0	
+doInvoice_SOURCE_BOX	1	Modified
+doInvoice_BOX_STAGE	0	
+doInvoiceEntry_SOURCE_BOX	1	Modified
+doInvoiceEntry_BOX_STAGE	0	
+doDrug_SOURCE_BOX	1	Modified
+doDrug_BOX_STAGE	0	
+doCashier_SOURCE_BOX	1	Modified
+doCashier_BOX_STAGE	0	
+doCategory_SOURCE_BOX	1	Modified
+doCategory_BOX_STAGE	0	
+doCustomer_SOURCE_BOX	1	Modified
+doCustomer_BOX_STAGE	0	
+doDoctor_SOURCE_BOX	1	Modified
+doDoctor_BOX_STAGE	0	
+doStatement_SOURCE_BOX	1	Modified
+doStatement_BOX_STAGE	0	
+doPharmacist_SOURCE_BOX	1	Modified
+doPharmacist_BOX_STAGE	0	
+doPatient_SOURCE_BOX	1	Modified
+doPatient_BOX_STAGE	0	
+doItemBase_SOURCE_BOX	1	Modified
+doItemBase_BOX_STAGE	0	
+doUserAccount_SOURCE_BOX	2	ID
+doUserAccount_BOX_STAGE	0	
+doItemPricingHistory_SOURCE_BOX	1	Modified
+doItemPricingHistory_BOX_STAGE	0	
+doAccount_SOURCE_BOX	1	Modified
+doAccount_BOX_STAGE	0	
+doPurchaseOrderEntry_SOURCE_BOX	1	Modified
+doPurchaseOrderEntry_BOX_STAGE	0	
+doSupplier_SOURCE_BOX	1	Modified
+doSupplier_BOX_STAGE	0	
+doDepartment_SOURCE_BOX	1	Modified
+doDepartment_BOX_STAGE	0	
+doActivity_SOURCE_BOX	1	Modified
+doActivity_BOX_STAGE	0	
+doGroup-GroupEntries_SOURCE_BOX	2	ID-2
+doGroup-GroupEntries_BOX_STAGE	0	
+doItemClassification_SOURCE_BOX	1	Modified
+doItemClassification_BOX_STAGE	0	
+doItemMessage_SOURCE_BOX	1	Modified
+doItemMessage_BOX_STAGE	0	
+doItemTax_SOURCE_BOX	1	Modified
+doItemTax_BOX_STAGE	0	
+doNursingHome_SOURCE_BOX	1	Modified
+doNursingHome_BOX_STAGE	0	
+doPricingPlan_SOURCE_BOX	1	Modified
+doPricingPlan_BOX_STAGE	0	
+doPricingReview_SOURCE_BOX	1	Modified
+doPricingReview_BOX_STAGE	0	
+doPricingReviewEntry_SOURCE_BOX	1	Modified
+doPricingReviewEntry_BOX_STAGE	0	
+doQuantityDiscountScheme_SOURCE_BOX	1	Modified
+doQuantityDiscountScheme_BOX_STAGE	0	
+doSupplierItem_SOURCE_BOX	1	Modified
+doSupplierItem_BOX_STAGE	0	
+doRegister_SOURCE_BOX	1	Modified
+doRegister_BOX_STAGE	0	
+doBatch_SOURCE_BOX	1	Modified
+doBatch_BOX_STAGE	0	
+doTender_SOURCE_BOX	1	Modified
+doTender_BOX_STAGE	0	
+doBusinessUnit-AuditHistory_SOURCE_BOX	1	AuditDate
+doBusinessUnit-AuditHistory_BOX_STAGE	0	
+doItemMovementHistory_SOURCE_BOX	1	Modified
+doItemMovementHistory_BOX_STAGE	0	
+doItem_SOURCE_BOX	1	ROULastUpdated
+doItem_BOX_STAGE	0	
+doItem-ItemUsage_SOURCE_BOX	2	ID
+doItem-ItemUsage_BOX_STAGE	0	
+doStocktake	1	Modified
+doStocktake_BOX_STAGE	0	
+doStocktakeEntry	1	Modified
+doStocktakeEntry_BOX_STAGE	0	
+TransactionEntry_SOURCE_BOX	4	DBTimeStamp
+TransactionEntry_BOX_STAGE	0	
+NUS_PO_Patient_SOURCE_BOX	2	Id
+NUS_PO_Patient_BOX_STAGE	0	
+NUS_PO_Script_SOURCE_BOX	1	Created
+NUS_PO_Script_BOX_STAGE	0	
+NUS_TransactionStats_SOURCE_BOX	1	LastUpdated
+NUS_TransactionStats_BOX_STAGE	0	
+NUS_PostCodeTransaction_SOURCE_BOX	1	LastUpdated
+NUS_PostCodeTransaction_BOX_STAGE	0	
+Register_SOURCE_BOX	4	DBTimeStamp
+Register_BOX_STAGE	0	
+Supplier_SOURCE_BOX	1	LastUpdated
+Supplier_BOX_STAGE	0	
+Tax_SOURCE_BOX	4	DBTimeStamp
+Tax_BOX_STAGE	0	
+TaxEntry_SOURCE_BOX	4	DBTimeStamp
+TaxEntry_BOX_STAGE	0	
+Transaction_SOURCE_BOX	4	DBTimeStamp
+Transaction_BOX_STAGE	0	
+Batch_SOURCE_BOX	4	DBTimeStamp
+Batch_BOX_STAGE	0	
+Tender_SOURCE_BOX	4	DBTimeStamp
+Tender_BOX_STAGE	0	
+Category_SOURCE_BOX	4	DBTimeStamp
+Category_BOX_STAGE	0	
+Item_SOURCE_BOX	4	DBTimeStamp
+Item_BOX_STAGE	0	
+Department_SOURCE_BOX	4	DBTimeStamp
+Department_BOX_STAGE	0	
+TenderEntry_SOURCE_BOX	4	DBTimeStamp
+TenderEntry_BOX_STAGE	0	
+Customer_SOURCE_BOX	4	DBTimeStamp
+Customer_BOX_STAGE	0	
+SalesRep_SOURCE_BOX	4	DBTimeStamp
+SalesRep_BOX_STAGE	0	
+Cashier_SOURCE_BOX	4	DBTimeStamp
+Cashier_BOX_STAGE	0	
+Store_SOURCE_BOX	4	DBTimeStamp
+Store_BOX_STAGE	0	
+AppCat_Alias_SOURCE_BOX	1	LastUpdated
+AppCat_Alias_BOX_STAGE	0	
+AppCat_Category_SOURCE_BOX	1	LastUpdated
+AppCat_Category_BOX_STAGE	0	
+AppCat_Department_SOURCE_BOX	1	LastUpdated
+AppCat_Department_BOX_STAGE	0	
+AppCat_Item_SOURCE_BOX	1	LastUpdated
+AppCat_Item_BOX_STAGE	0	
+AppCat_Supplier_SOURCE_BOX	1	LastUpdated
+AppCat_Supplier_BOX_STAGE	0	
+AppCat_SupplierList_SOURCE_BOX	1	LastUpdated
+AppCat_SupplierList_BOX_STAGE	0	

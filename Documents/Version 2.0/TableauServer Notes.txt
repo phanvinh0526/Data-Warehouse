@@ -1,0 +1,31 @@
+u: 70/mo
+v: 35/mo
+
+For 9 users login (viewers, publisher)
+3780 = 35*9 * 12
+
+For 9 users + 1 publisher (Tableau Desktop Professional)
+4620 = 3780 + 70*12
+
+----------------
+1 publisher, 5 users login server = when you create user on server
+
+70*12 + 5*35*12 = $2940 / year
+
+-----------
+Fred Customer Service
+KNOWS IT ALL
+
+--------------------------------------------------
+Tableau
+-------
+Single computer
+
+8 physical cores, 2.0 GHz or higher CPU
+64-bit processor
+32 GB system memory
+50 GB minimum free disk space
+
+Read more at https://www.tableau.com/products/techspecs#pgmM5ev463LrDcOZ.99
+
+----------------------------------------------------
