@@ -245,12 +245,12 @@ BEGIN
 		SELECT @Count = count(*) from [#TempSummary];
 
 		--Gets All required results.
-		IF EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='dbo' and TABLE_NAME='ResultStockValuation')
+		IF EXISTS(SELECT TOP 1 1 FROM [ADVANCED_ANALYSIS].[dbo].[SVH_ResultStockValuation] WHERE StoreKey = @StoreKey)
 		BEGIN	
-			DELETE FROM ResultStockValuation
+			DELETE FROM [ADVANCED_ANALYSIS].[dbo].[SVH_ResultStockValuation]
 			WHERE StoreKey = @StoreKey AND AuditYear = YEAR(@StockValueAt) AND AuditMonth = MONTH(@StockValueAt)
 		END 
-		INSERT INTO ResultStockValuation(Productkey, ProductCode, Productname, Department, 
+		INSERT INTO [ADVANCED_ANALYSIS].[dbo].[SVH_ResultStockValuation](ProductKey, ProductCode, Productname, Department, 
 						Category, Cost, QuantityOnHand, TotalCost, TotalLastCostPCT, StoreKey, AuditYear, AuditMonth)
 		SELECT Productkey, ProductCode, Productname, Department
 			, Category, Cost, QuantityOnHand, TotalCost

@@ -16,9 +16,9 @@ SELECT
 	FactTransactionEntry.TransactionEntryKey AS TransactionEntryKey,
 	FactTransaction.TransactionNumber AS TransactionNumber, -- what difference TransactionID, what about LOTS
 	DimTime.Date AS TransactionDate,
-	MONTH(DimTime.Date) AS TransactionDate_Month,
-	YEAR(DimTime.Date) AS TransactionDate_Year,
-	DimTime.Hour AS TransactionHour,
+	MONTH(DimTime.Date) AS TransDate_Month,
+	YEAR(DimTime.Date) AS TransDate_Year,
+	DimTime.Hour AS TransHour,
 	DimProduct.ProductName AS Item_Description,
 	DimProductDepartment.ProductDepartmentName AS Department,
 	isnull(DimProductGroup.ProductGroupName, 'No Category') AS Category,

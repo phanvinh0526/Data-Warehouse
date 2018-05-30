@@ -272,13 +272,13 @@ BEGIN
 				Make final Results
 			**********************/
 			PRINT 'here 11'
-			IF EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='dbo' and TABLE_NAME='ResultStockValuation_Ext')
+			IF EXISTS(select top 1 1 from [ADVANCED_ANALYSIS].[dbo].[SVH_ResultStockValuation_Ext])
 			BEGIN	
-				DELETE FROM [ResultStockValuation_Ext]
+				DELETE FROM [ADVANCED_ANALYSIS].[dbo].[SVH_ResultStockValuation_Ext]
 				WHERE StoreKey = @StoreKey AND AuditYear = YEAR(@StockValueAt) AND AuditMonth = MONTH(@StockValueAt)
 			END
-			INSERT INTO [dbo].[ResultStockValuation_Ext] 
-				(StoreKey, AuditMonth, AuditYear, Productkey, ProductCode, ProductName, 
+			INSERT INTO [ADVANCED_ANALYSIS].[dbo].[SVH_ResultStockValuation_Ext]
+				(StoreKey, AuditMonth, AuditYear, ProductKey, ProductCode, ProductName, 
 				Department, Category, Cost, QuantityOnHand, TotalCost, TotalLastCostPCT)
 			SELECT @StoreKey, MONTH(@StockValueAt) as AuditMonth, YEAR(@StockValueAt) as AuditYear, 
 				Productkey, ProductCode, ProductName, 
@@ -379,4 +379,4 @@ END
 /***************
 	EXECUTION
 ***************/
--- exec p_Stock_Valuation_History_With2Parameters 7, 'fred', '2018-02-01', '2018-03-01'  --NOTES: 'yyyy-mm-dd'
+-- exec p_Stock_Valuation_History_With2Parameters 7, 'fred', '2017-01-01', '2018-05-01'  --NOTES: 'yyyy-mm-dd'

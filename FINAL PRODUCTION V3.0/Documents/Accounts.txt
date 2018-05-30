@@ -1,0 +1,24 @@
+
+
+SQL Server: User at Store
+	Username:	dw_user
+	Password:	AutumnGroup
+
+SQL Server: Admin User at Server
+	Username:	dw_admin
+	Password:	0402329029
+
+Tableau Server Admin
+	Username:	dw_admin
+	Password:	0402329029
+
+DW-SERVER (Server Windows)
+	Username:	admin
+	Password:	AutumnGroup
+
+DW-ADMIN / Box_Computer (Box Windows)
+	Username:	admin
+	Password:	311212
+
+
+

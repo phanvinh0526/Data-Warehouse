@@ -28,7 +28,9 @@ SELECT
 	MONTH(DimTime.Date) AS TransactionDate_Month,
 	YEAR(DimTime.Date) AS TransactionDate_Year,
 	DimTime.Hour AS TransactionHour,
-	DimProduct.ProductName AS Item_Description,
+	DimProduct.ProductKey AS ProductKey,
+	DimProduct.ProductName as ProductName,
+	DimProduct.ProductName AS Item_Description, -- renamed: Item_Description
 	DimProductDepartment.ProductDepartmentName AS Department,
 	isnull(DimProductGroup.ProductGroupName, 'No Category') AS Category,
 	FactTransactionEntry.Quantity AS QtySold,

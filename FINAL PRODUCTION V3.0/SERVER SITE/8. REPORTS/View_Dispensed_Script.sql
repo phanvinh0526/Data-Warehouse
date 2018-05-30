@@ -26,7 +26,7 @@ SELECT
 	DimScript.GovernmentRecoveryAmount as GovRecov,
 	DimScript.ScriptClassification as ScriptClass_Original,
 	CASE UPPER(RTRIM(DimScript.ScriptClassification))
-		WHEN '<' THEN 'Safety Net'
+		WHEN '<' THEN 'Gen Under Co-Pay' -- "Safety Net"
 		WHEN 'N' THEN 'General'        
 		WHEN 'C' THEN 'Concession'        
 		WHEN 'S' THEN 'Concession'        
